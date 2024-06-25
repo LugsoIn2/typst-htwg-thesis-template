@@ -1,5 +1,4 @@
 #import "textTemplate.typ": *
-#import "utils.typ": *
 
 #let cover(
   lang: "",
@@ -129,8 +128,6 @@
           margin: (left: 20mm, right: 20mm, top: 40mm, bottom: 40mm),
           numbering: "i",
           number-align: center,
-          // background: rgb(255,255,255),
-          fill: white
         )
       }
 }
