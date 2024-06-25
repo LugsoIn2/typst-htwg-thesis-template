@@ -8,8 +8,7 @@
 
 [**Example physicalPrint pdf export**](docs/example-physicalPrint-main.pdf)
 
-[**Example digital pdf export**](docs/example-digital-main.pdf)
-
+[**Example digital pdf export**](docs/example-digital-main.pdf) (without empty pages)
 
 ## Translations
 > [!NOTE]  
