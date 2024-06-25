@@ -5,7 +5,7 @@
 2. Customise the template settings in the main.typ
 3. Include your chapters in the main.typ
 
-[**Example pdf export**](docs/dokument.pdf)
+[**Example pdf export**](docs/example-main.pdf)
 
 ## Translations
 > [!NOTE]  
