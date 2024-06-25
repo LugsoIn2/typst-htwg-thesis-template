@@ -12,6 +12,7 @@
   submissionDate: datetime,
   studentnumber: "",
   title-font: "Arial",
+  physicalPrint: true,
 ) = {
       {        
         set page(
@@ -99,7 +100,9 @@
           )
         )
       }
-      pagebreak()
+      if physicalPrint {
+        pagebreak()
+      }
       {
         set page(
           margin: (left: 20mm, right: 20mm, top: 40mm, bottom: 40mm),

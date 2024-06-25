@@ -12,6 +12,7 @@
   supervisor: "",
   declarationOfHonour-font: "Arial",
   location: "",
+  physicalPrint: true,
 ) = { 
       {
         set page(
@@ -64,7 +65,9 @@
             "______________________"
         )
       }
-      pagebreak()
+      if physicalPrint {
+        pagebreak()
+      }
       {
         set page(
           margin: (left: 20mm, right: 20mm, top: 40mm, bottom: 40mm),

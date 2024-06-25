@@ -1,4 +1,5 @@
 #import "textTemplate.typ": *
+#import "utils.typ": *
 
 #let cover(
   lang: "",
@@ -10,6 +11,7 @@
   authormail: "",
   location: "",
   cover-font: "Arial",
+  physicalPrint: true,
 ) = {
       {
         set page(
@@ -77,53 +79,58 @@
         ))
 
 
-      // -- Author Informations --
-        place(
-          top + right,
-          dx: -20pt,
-          dy: 15pt,
-          box(
-            fill: background-color,
-            outset: (x: 20pt, y: 15pt),
-            align(left, text(font: cover-font, size: 11pt, weight: 800, languageText.at(0))) +
-            v(3mm) +
-            align(left, text(font: cover-font, size: 10pt, weight: 400, author)) +
-            align(left, text(font: cover-font, size: 10pt, weight: 400, languageText.at(1) + studentnumber)) +
-            align(left, text(font: cover-font, size: 10pt, weight: 400, authormail))
-          ))
-        v(140mm)
+        // -- Author Informations --
+          place(
+            top + right,
+            dx: -20pt,
+            dy: 15pt,
+            box(
+              fill: background-color,
+              outset: (x: 20pt, y: 15pt),
+              align(left, text(font: cover-font, size: 11pt, weight: 800, languageText.at(0))) +
+              v(3mm) +
+              align(left, text(font: cover-font, size: 10pt, weight: 400, author)) +
+              align(left, text(font: cover-font, size: 10pt, weight: 400, languageText.at(1) + studentnumber)) +
+              align(left, text(font: cover-font, size: 10pt, weight: 400, authormail))
+            ))
+          v(140mm)
         
 
-      // -- Location and Date --
-        place(
-          bottom + right,
-          dx: -40pt,
-          dy: 50pt,
+        // -- Location and Date --
+          place(
+            bottom + right,
+            dx: -40pt,
+            dy: 50pt,
+            box(
+              fill: background-color,
+              outset: (x: 20pt, y: 15pt),
+              align(left, text(font: cover-font, size: 11pt, weight: 400, location + ", " + compile-date)
+            )))
+
+
+        // ------- Title --------
           box(
             fill: background-color,
-            outset: (x: 20pt, y: 15pt),
-            align(left, text(font: cover-font, size: 11pt, weight: 400, location + ", " + compile-date)
-          )))
-
-
-      // ------- Title --------
-        box(
-          fill: background-color,
-          outset: (x: 40pt, y: 10pt),
-          if degree == "Bachelor" or degree == "Master" {
-            align(left, text(font: cover-font, 2em, weight: 100, degree + "thesis"))
-          } else {
-            align(left, text(font: cover-font, 2em, weight: 100, degree))
-          } +
-          align(left, text(font: cover-font, 2em, weight: 700, title))
-        )
+            outset: (x: 40pt, y: 10pt),
+            if degree == "Bachelor" or degree == "Master" {
+              align(left, text(font: cover-font, 2em, weight: 100, degree + "thesis"))
+            } else {
+              align(left, text(font: cover-font, 2em, weight: 100, degree))
+            } +
+            align(left, text(font: cover-font, 2em, weight: 700, title))
+          )
+        
       }
-      pagebreak()
+      if physicalPrint {
+        pagebreak()
+      }
       {
         set page(
           margin: (left: 20mm, right: 20mm, top: 40mm, bottom: 40mm),
           numbering: "i",
           number-align: center,
+          // background: rgb(255,255,255),
+          fill: white
         )
       }
 }

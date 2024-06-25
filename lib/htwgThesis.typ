@@ -35,6 +35,7 @@
   show_list_of_figures: bool,
   appendices: (),
   citeStyle: "ieee",
+  physicalPrint: true,
 ) = {
   // --- ---------------- ----
   // - Check degree settings -
@@ -56,6 +57,7 @@
     studentnumber: studentnumber,
     authormail: authormail,
     location: location,
+    physicalPrint: physicalPrint,
   )
 
   // --- ---------------- ----
@@ -71,6 +73,7 @@
     startDate: startDate,
     submissionDate: submissionDate,
     studentnumber: studentnumber,
+    physicalPrint: physicalPrint,
   )
 
   // --- ---------------- ----
@@ -86,6 +89,7 @@
     companySentence: companySentence,
     supervisor: supervisor,
     location: location,
+    physicalPrint: physicalPrint,
   )
 
   set page(
@@ -114,7 +118,12 @@
   // --- ---------------- ----
   // Level 1 Pagebreak to odd
   show heading.where(level: 1): it => [
-    #pagebreak(weak: true, to: "odd")
+    // #pagebreak(weak: true, to: "odd")
+    #if physicalPrint {
+      pagebreak(weak: true, to: "odd")
+    } else {
+      pagebreak(weak: true)
+    }
     #it
   ]
   

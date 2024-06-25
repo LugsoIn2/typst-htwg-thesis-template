@@ -21,6 +21,7 @@
 
 // ----- ------------------ ---
 // ----- template setting -----
+#let physicalPrint = true // this adds more empty pages
 #let citeStyle = "ieee"
 #let show_appendix = true
 #let show_glossary = true
@@ -55,6 +56,7 @@
   show_list_of_figures: show_list_of_figures,
   appendices: appendicesList,
   citeStyle: citeStyle,
+  physicalPrint: physicalPrint
 )
 // ----- ------------------ ---
 
