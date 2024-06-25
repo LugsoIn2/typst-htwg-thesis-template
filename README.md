@@ -13,3 +13,10 @@
 > 
 > The texts to change are located in the lib/textTemplate.typ file. 
 
+
+## Typst Links
+
+- [typst Website and App](https://typst.app/)
+- [typst docs](https://typst.app/docs/)
+- [typst github](https://github.com/typst/typst)
+
