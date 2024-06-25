@@ -16,7 +16,12 @@
 
 ## Typst Links
 
-- [typst Website and App](https://typst.app/)
+- [typst Website and WebApp](https://typst.app/)
 - [typst docs](https://typst.app/docs/)
 - [typst github](https://github.com/typst/typst)
+
+## Typst and VSCode
+
+- [typst extension (inofficial)](https://marketplace.visualstudio.com/items?itemName=nvarner.typst-lsp)
+- [typst preview extension (inofficial)](https://marketplace.visualstudio.com/items?itemName=mgt19937.typst-preview)
 
