@@ -4,8 +4,12 @@
 1. Put your Thesis metadata to main.typ
 2. Customise the template settings in the main.typ
 3. Include your chapters in the main.typ
+   
 
-[**Example pdf export**](docs/example-main.pdf)
+[**Example physicalPrint pdf export**](docs/example-physicalPrint-main.pdf)
+
+[**Example digital pdf export**](docs/example-digital-main.pdf)
+
 
 ## Translations
 > [!NOTE]  
