@@ -9,7 +9,7 @@
   // -- Table of Contents --
   align(right, outline(
     title: {
-      text(font: table-of-contents-font, fill: font-color, size: 35pt, weight: 700, languageText.at(0))
+      text(font: table-of-contents-font, fill: font-color, size: 30pt, weight: 700, languageText.at(0))
       v(15mm)
     },
     indent: 2em

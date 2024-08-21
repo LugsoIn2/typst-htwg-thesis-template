@@ -25,6 +25,6 @@
 
 ## Typst and VSCode
 
-- [typst extension (inofficial)](https://marketplace.visualstudio.com/items?itemName=nvarner.typst-lsp)
-- [typst preview extension (inofficial)](https://marketplace.visualstudio.com/items?itemName=mgt19937.typst-preview)
+- [typst extension: Typst LSP (inofficial)](https://marketplace.visualstudio.com/items?itemName=nvarner.typst-lsp)
+- [typst extension with preview: Tinymist Typst (inofficial)](https://marketplace.visualstudio.com/items?itemName=myriad-dreamin.tinymist)
 
