@@ -109,8 +109,8 @@
   // --- ---------------- ----
   // -------- Headings -------
   show heading: set block(below: 1.85em, above: 1.85em)
-  show heading: set text(font: thesis-template-font)
-  show heading.where(level: 1): set text(fill: htwg-color-green, size: 35pt)
+  show heading: set text(font: thesis-template-font, overhang: false)
+  show heading.where(level: 1): set text(fill: htwg-color-green, size: 30pt)
   show heading.where(level: 1): set align(right)
   show heading.where(level: 1): set block(below: 2.0em)
   set heading(numbering: "1.1.")
