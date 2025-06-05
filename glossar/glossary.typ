@@ -13,7 +13,7 @@
       key: "oidc", 
       short: "OIDC", 
       long: "OpenID Connect", 
-      desc: [OpenID is an open standard and decentralized authentication protocol promoted by the non-profit
+      description: [OpenID is an open standard and decentralized authentication protocol promoted by the non-profit
       #link("https://en.wikipedia.org/wiki/OpenID#OpenID_Foundation")[OpenID Foundation].],
       // group: "Accronyms",
     ),
@@ -24,7 +24,7 @@
       short: "potato",
       // "plural" will be used when "short" should be pluralized
       plural: "potatoes",
-      desc: [#lorem(10)],
+      description: [#lorem(10)],
     ),
 
     // a term with a long plural 
@@ -34,6 +34,6 @@
       long: "diagonal matrix",
       // "longplural" will be used when "long" should be pluralized
       longplural: "diagonal matrices",
-      desc: "Probably some math stuff idk",
+      description: "Probably some math stuff idk",
     ),
   )

@@ -57,7 +57,7 @@
   appendices: appendicesList,
   citeStyle: citeStyle,
   physicalPrint: physicalPrint
-)
+) 
 // ----- ------------------ ---
 
 

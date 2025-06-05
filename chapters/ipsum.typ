@@ -1,5 +1,5 @@
 #import "../lib/utils.typ": todo
-#import "@preview/glossarium:0.2.6": gls, glspl
+#import "@preview/glossarium:0.5.6": gls, glspl
 
 
 = Chapter 2 Ipsum <chap2>

@@ -7,9 +7,8 @@
 #import "listOfFigures.typ": *
 #import "listOfTables.typ": *
 #import "textTemplate.typ": *
-#import "@preview/glossarium:0.4.1": make-glossary, print-glossary, gls, glspl
+#import "@preview/glossarium:0.5.6": make-glossary, register-glossary, print-glossary, gls, glspl
 #import "../glossar/glossary.typ": glossary
-#show: make-glossary
 
 #let htwgThesis(
   lang: "",
@@ -163,9 +162,11 @@
   // --- ---------------- ----
   // ------- glossary --------
   if show_glossary == true {
+    show: make-glossary
+    register-glossary(glossary)
     let languageTextGlossary = textTemplate(pagetype: "glossary" ,lang: lang)
     heading(numbering: none)[#languageTextGlossary.at(0)]
-    print-glossary(glossary)
+    print-glossary(glossary, disable-back-references: true)
   }
 
   // --- ---------------- ----
